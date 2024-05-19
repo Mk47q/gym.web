@@ -21,6 +21,12 @@
         background-size: cover;
         background-attachment: fixed;
     }
+    .main3{
+        background-image: url("../images/trainer-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     li{
         position: relative;
     }
@@ -37,7 +43,7 @@
     li:hover::after{
         width: 100%;
     }
-    .style-main1{
+    .style-main1,.style-main2{
         position: relative;
     }
     .style-main1::after{
@@ -45,6 +51,15 @@
         position: absolute;
         top: 29px;
         left: 50px;
+        height: 4px;
+        width: 70px;
+        background-color: rgb(173, 0, 29);
+    }
+    .style-main2::after{
+        content: "";
+        position: absolute;
+        top: 29px;
+        left: 70px;
         height: 4px;
         width: 70px;
         background-color: rgb(173, 0, 29);
