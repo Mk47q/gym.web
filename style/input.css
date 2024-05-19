@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities{
+    .header{
+        background-image: url("../images/hero-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: rgb(175, 58, 78);
+    }
+    .main1{
+        background-image: url("../images/us-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    li{
+        position: relative;
+    }
+    li::after{
+        content: "";
+        position: absolute;
+        top: 23px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: rgb(173, 0, 29);
+        transition: all 200ms;
+    }
+    li:hover::after{
+        width: 100%;
+    }
+    .style-main1{
+        position: relative;
+    }
+    .style-main1::after{
+        content: "";
+        position: absolute;
+        top: 29px;
+        left: 50px;
+        height: 4px;
+        width: 70px;
+        background-color: rgb(173, 0, 29);
+    }
+    .open{
+        left: 0;
+    }
+    .show{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 65%;
+    }
+}
